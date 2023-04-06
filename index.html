@@ -56,7 +56,7 @@
 
             <div class="bottom-text">
                 <h1 class="item">Effective Solutions for Your Business</h1>
-                <button class="button" type="button">Order Service</button>
+                <button class="button" data-modal-open type="button">Order Service</button>
             </div>
         </section>
 
@@ -302,7 +302,7 @@
             <div class="container">
                 <h2 class="title-team">Customers</h2>
                 <ul class="customers-logo-list list">
-                    <li class="costumers-logo-item" >
+                    <li class="costumers-logo-item">
                         <a href="" class="logo-link link">
                             <svg class="icon-logo-company" width="168" height="88">
                                 <use class="icon-logo-soc" href="./images/company-defs.svg#icon-ya-co"></use>
@@ -407,9 +407,28 @@
                 </ul>
             </div>
         </div>
-
-
     </footer>
-</body>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="icon-modal">
+                <svg class="svg-modal" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_480361_273)">
+                        <path
+                            d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                            fill="#2E2F42" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_480361_273">
+                            <rect width="8" height="8" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+</body>
 </html>
