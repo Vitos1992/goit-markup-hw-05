@@ -105,11 +105,15 @@ img {
   letter-spacing: 0.02em;
   text-transform: none;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
 
 }
 
-.hov-foc::after {
+.underline {
+  position: relative;
+}
+
+.underline::after {
   content: '';
   position: absolute;
   background-color: #404BBF;
@@ -117,15 +121,13 @@ img {
   height: 4px;
   width: 100%;
   left: 0;
-  top: 44px;
+  bottom: 0;
 
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-  position: relative;
-
 }
 
 .nav {
@@ -133,6 +135,7 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 40px;
+  position: relative;
 }
 
 .site-nav .nav:last-child {
@@ -231,6 +234,7 @@ img {
   padding: 16px 32px;
   border: 1px solid transparent;
   border-radius: 4px;
+  transition: background-color 250ms linear;
 }
 
 .button:hover,
@@ -254,6 +258,7 @@ img {
   background-color: #F4F4FD;
   border: 1px solid transparent;
   padding: 12px 24px;
+  transition: background-color 250ms linear;
 }
 
 .button-p:hover,
@@ -538,8 +543,13 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: #4D5AE5;
+  transition: background-color 250ms linear;
 
 }
+
+
+
+
 
 .soc-svg-item {
   fill: #F4F4FD;
@@ -595,6 +605,7 @@ img {
   height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
+  transition: border 250ms linear;
 }
 
 .costumers-logo-item:hover,
@@ -614,6 +625,7 @@ img {
 
 .icon-logo-company {
   padding: 16px 32px;
+
 }
 
 .icon-logo-company:hover .icon-logo-soc,
@@ -622,7 +634,7 @@ img {
 }
 
 .icon-logo-soc {
-
+  transition: fill 250ms linear;
   fill: #8E8F99;
 }
 
@@ -679,6 +691,23 @@ img {
 
 }
 
+.web-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  transition: background-color 250ms linear;
+
+}
+
+.web-social-link:hover,
+.web-social-link:focus {
+  background-color: #31D0AA;
+}
+
 .footer-wrap {
   display: inline-block;
   width: auto;
@@ -701,6 +730,7 @@ img {
   height: 100%;
   background: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms linear, visibility 250ms linear;
+  
 }
 
 .modal {
@@ -711,11 +741,17 @@ img {
   top: 50%;
   background-color: #FCFCFC;
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 250ms linear;
   padding: 24px;
+  
 }
 
-.icon-modal{
+.backdrop.is-hidden .modal{
+  transform: translate(-50%, -50%) rotateY(1);
+}
+
+.icon-modal {
   width: 24px;
   height: 24px;
   background-color: #E7E9FC;
@@ -730,12 +766,13 @@ img {
 }
 
 .icon-modal:hover,
-.icon-modal:focus{
+.icon-modal:focus {
   background-color: #404BBF;
   color: #FFFFFF;
+  transform: translateY();
 }
 
-.is-hidden{
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
