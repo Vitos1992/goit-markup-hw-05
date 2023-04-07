@@ -289,6 +289,10 @@ img {
   border: 1px solid #E7E9FC;
   border-top: none;
   padding-left: 8px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+   0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
+    ;
 }
 
 .fons-modal {
@@ -297,11 +301,13 @@ img {
 
 }
 
-.fons-modal:hover>.foons-text {
+.fons-modal:hover>.overlay {
   transform: translateY(0);
+  
+  
 }
 
-.foons-text {
+.overlay {
   font-family: "Roboto",
     sans-serif;
   font-size: 16px;
@@ -318,6 +324,7 @@ img {
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
+  
 
 }
 
@@ -325,10 +332,7 @@ img {
 .box-foons:hover,
 .box-foons:focus {
   border: 1px solid #F4F4FD;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-  ;
+  
 }
 
 .box-foons-img {
@@ -548,10 +552,6 @@ img {
   transition: background-color 250ms linear;
 
 }
-
-
-
-
 
 .soc-svg-item {
   fill: #F4F4FD;
