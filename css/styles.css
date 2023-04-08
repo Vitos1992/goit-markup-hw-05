@@ -301,7 +301,7 @@ img {
 
 }
 
-.fons-modal:hover>.overlay {
+.product:hover .overlay {
   transform: translateY(0);
   
   
