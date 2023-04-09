@@ -331,7 +331,7 @@ img {
 
 .box-foons:hover,
 .box-foons:focus {
-  border: 1px solid #F4F4FD;
+  border: 0px solid #F4F4FD;
   
 }
 
